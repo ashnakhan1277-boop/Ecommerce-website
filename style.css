@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#121212;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#1e1e1e;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#D4AF37;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#D4AF37;
+}
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+    @media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 5%;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:400px;
+        margin-top:40px;
+    }
+
+    .btn,
+    .btn2{
+        display:block;
+        margin:15px auto;
+        width:220px;
+    }
+
+}
+
+}
+.hero{
+    height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("images/poster.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#D4AF37;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:white;
+    margin:20px 0;
+}
+.btn,
+.btn2{
+    display:inline-block;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    margin-right:15px;
+    transition:0.3s;
+}
+
+.btn{
+    background:#D4AF37;
+    color:black;
+}
+
+.btn2{
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+}
+
+.btn:hover,
+.btn2:hover{
+    transform:translateY(-5px);
+}
+
+.hero-image img{
+    width:500px;
+    border-radius:20px;
+}
