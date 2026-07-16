@@ -15,8 +15,17 @@
 
     <!-- Navbar -->
     <header>
+    <div class="top-banner">
+    🚚 Free Delivery All Over Pakistan |
+    💳 Cash On Delivery Available |
+    🔒 100% Secure Payment
+</div>
         <nav class="navbar">
-
+<div class="cart">
+    🛒 Cart (<span id="cart-count">0</span>)
+</div>
+<div class="menu-toggle">☰</div>
+</div>
             <div class="logo">ShopEase</div>
 
             <ul class="nav-links">
@@ -25,7 +34,16 @@
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+<div class="nav-right">
 
+    <input type="text" placeholder="Search products..." class="search-bar">
+
+    <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+</div>
+<button id="theme-toggle">🌙</button>
         </nav>
     <section class="hero">
 
@@ -42,9 +60,225 @@
         <a href="#categories" class="btn2">Explore Categories</a>
 
     </div>
+</section>
+<section class="categories">
+
+    <h2>Shop By Category</h2>
+
+    <div class="category-container">
+
+        <div class="category-card">👟 Shoes</div>
+        <div class="category-card">⌚ Watches</div>
+        <div class="category-card">💄 Makeup</div>
+        <div class="category-card">🌸 Perfumes</div>
+        <div class="category-card">👜 Bags</div>
+        <div class="category-card">💻 Electronics</div>
+
+    </div>
+
+</section>
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+<section class="flash-sale">
+
+    <h2>🔥 Flash Sale Ends In</h2>
+
+    <div id="countdown">
+        <span id="days">00</span> Days :
+        <span id="hours">00</span> Hours :
+        <span id="minutes">00</span> Minutes :
+        <span id="seconds">00</span> Seconds
+    </div>
+
+</section>
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/shoes1.jpg" alt="Shoes">
+            <h3>Premium Shoes</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 3,500</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/watch.jpg" alt="Watch">
+            <h3>Luxury Watch</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 40,000</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/headphone.jpg" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 6,500</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <h3>Gaming Laptop</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 30,000</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/perfume.jpg" alt="Perfume">
+            <h3>Luxury Perfume</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 5,500</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/makeup.jpg" alt="Makeup">
+            <h3>Premium Makeup Kit</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 7,000</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/handbag.jpg" alt="Handbag">
+            <h3>Designer Handbag</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 8,500</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/skincare.jpg" alt="Skincare">
+            <h3>Skincare Set</h3>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>RS 4,500</p>
+
+            <div class="product-buttons">
+                <button class="cart-btn">Add to Cart</button>
+                <button class="wish-btn">♡</button>
+            </div>
+        </div>
+
+    </div>
 
 </section>
     </header>
+<section class="contact" id="contact">
 
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+<section class="newsletter">
+
+    <h2>Subscribe to Our Newsletter</h2>
+
+    <p>Get updates about new products and special offers.</p>
+
+    <div class="newsletter-box">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </div>
+
+</section>
+<section class="reviews">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <h3>Sarah Khan</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Amazing quality products and fast delivery!"</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Ahmed Ali</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"The perfume quality is excellent. Highly recommended."</p>
+        </div>
+
+        <div class="review-card">
+            <h3>Ayesha Noor</h3>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Beautiful design and premium customer service."</p>
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <p>© 2026 LuxeCart. All Rights Reserved.</p>
+
+    <div class="footer-icons">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+    </div>
+
+</footer>
+
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2 id="modal-title">Product Name</h2>
+        <p id="modal-price">Price</p>
+        <p>Premium quality product with fast delivery and excellent customer reviews.</p>
+
+        <button class="cart-btn">Add to Cart</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</body>
 </body>
 </html>
